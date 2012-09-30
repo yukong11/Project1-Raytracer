@@ -51,12 +51,12 @@ BLOG LINK:
 http://gpuprojects.blogspot.com/
 
 -------------------------------------------------------------------------------
-Instruction on buiding and running
+Instruction on building and running
 -------------------------------------------------------------------------------
 Default Setting is softshadow result without depth of field effect.
 
-1. if you machine gives warnings such as "Kernel failed! unknown error!" or "Kernel failed! the launch timed out and was terminated". It is possible that the soft shadow takes too long to compute in your machine, you can decrease the value in "__constant__ int rayNumbers=10;".
+1. if your machine gives warnings such as "Kernel failed! unknown error!" or "Kernel failed! the launch timed out and was terminated". It is possible that the soft shadow takes too long to compute in your machine, you can decrease the value in "__constant__ int rayNumbers=10;".
 
-2. if you don't want the soft shadow effects,you can make the value in  "__constant__ int rayNumbers=10;" to 1, and change the value "__constant__ bool softShadow=true;" to false
+2. if you don't want the soft shadow effect,you can make the value in  "__constant__ int rayNumbers=10;" to 1, and change the value "__constant__ bool softShadow=true;" to false
 
 3. if you want to see depth of field result, uncomment the line "//#define DEPTHOFFIELD"
