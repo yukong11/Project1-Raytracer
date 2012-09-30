@@ -23,14 +23,14 @@ Finished following optional features
 * Soft shadows and area lights 
 * Depth of field
 * Supersampled antialiasing   ------use jittering rather than supersampling for efficiency
-* Refraction, i.e. glass      ------refaction is not robust
+* Refraction, i.e. glass      ------refraction is not robust
         
 
 -------------------------------------------------------------------------------
 Features Analysis
 -------------------------------------------------------------------------------
 1. Complete Basic ray tracer
-   Implemeted basic ray tracer based on local illumination equation to deal with Lambert surface and specular highlight.
+   Implemented basic ray tracer based on local illumination equation to deal with Lambert surface and specular highlight.
    Todo:  square specular highlight.
 2. Soft shadows
    Soft shadows are achieved by tracing multiple light rays from the intersection point to the light source, rather than one light ray.  To do this, I choose the light ray starts from a random point on area light and ends at the intersection point.
